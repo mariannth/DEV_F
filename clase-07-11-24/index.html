@@ -10,13 +10,13 @@
 <body>
     <!-- Header es la sección superior de la pagina y generalmente incluye información introductoria, como el título y el menú de navegación  -->
     <header>
-        <h1>Bienvenidos a mi sitio web</h1>
+        <h1 id="inicio">Bienvenidos a mi sitio web</h1>
         <!-- Barra de navegación -->
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de mi</a></li>
-                <li><a href="#">Enlaces</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca-de">Acerca de mi</a></li>
+                <li><a href="#enlaces">Enlaces</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +24,7 @@
     Se recomienda usar main solo una vez en cada página para indicar la parte más importante del documento-->
     <main>
         <section>
-            <h2>Acerca de mi</h2>
+            <h2 id="acerca-de">Acerca de mi</h2>
             <p>
                 Mi nombre es Mariana y estoy aprendiendo desarrollo web y etiquetas semánticas
             </p>
@@ -47,7 +47,7 @@
             </figure>
         </section>
         <section>
-            <h2>Enlaces</h2>
+            <h2 id="enlaces">Enlaces</h2>
             <p>Visita estos sitios recomendados para aprender desarrollo web</p>
             <ul>
                 <!-- a es una etiqueta de enlaces que generalmente viene acompañada del atributo href donde agregamos la dirección a la cual queremos redireccionar, otro atributo comunmente utilizado es el de target que da un control de como se va a abrir el enlace -->
