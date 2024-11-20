@@ -4,36 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <h1>Curso básico de CSS</h1>
+        <h1 id="titulo-principal">Curso básico de CSS</h1>
         <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#detalles">Detalles del curso</a></li>
-                <li><a href="#contacto">Contáctanos</a></li>
+            <ul class="menu">
+                <li><a class="enlace" href="#inicio">Inicio</a></li>
+                <li><a class="enlace" href="#detalles">Detalles del curso</a></li>
+                <li><a class="enlace" href="#contacto">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="inicio">
-            <h2>Introducción</h2>
+            <h2 class="subtitulo">Introducción</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et fugiat, inventore delectus nisi nam adipisci
                 commodi eius placeat? Ipsam iusto harum nulla ipsum rem veritatis inventore nobis dolor suscipit
                 excepturi.</p>
         </section>
         <section id="detalles">
-            <h2>Detalles del curso</h2>
+            <h2 class="subtitulo">Detalles del curso</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et fugiat, inventore delectus nisi nam adipisci
                 commodi eius placeat? Ipsam iusto harum nulla ipsum rem veritatis inventore nobis dolor suscipit
                 excepturi.</p>
+            <ul>
+                <li>Conceptos básicos de CSS</li>
+                <li>Como usar selectores y propiedades</li>
+                <li>Como usar pseudo-clases</li>
+            </ul>
         </section>
-        <section id="contacto">
-            <h2>Contáctanos</h2>
-            <button>Quiero más información</button>
+        <section class="contacto" id="contacto">
+            <h2 class="subtitulo">Contáctanos</h2>
+           <div> <button class="boton_contacto">Quiero más información</button></div>
+           
         </section>
 
     </main>

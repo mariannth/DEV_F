@@ -1,0 +1,69 @@
+body{
+    font-family: Arial, Helvetica, sans-serif; /*Selectores de fuente*/
+    line-height: 1.5;
+    /* controla la altura de cada linea de texto para mejorar la legibilidad */
+}
+
+header{
+    /* background-color: #311157; */
+    /* Se usa el color de background-color: para colorear sólo el area */
+    background: linear-gradient(180deg, #240f71 0%, #ef3b95 100%); 
+    /* Se usa para degradados y el deg es si es de abajo para arriba o de izq a derecha */
+    color: #ffffff;
+    text-align: center;
+    /* text-align solo funciona en el elemento en bloque porque afecta al contenido dentro del bloque. No funciona en elmentos en linea porque estos ocupan solo el espacio necesario para su contenido */
+}
+
+footer{
+    background-color: #240f71;
+    color: #ffffff;
+    text-align: center;
+}
+
+.menu{
+    background: linear-gradient(180deg, #ef3b95 0%, #eb8e41 100%);
+    padding: 10px 0;
+    list-style: none;
+}
+
+.enlace{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100px;
+}
+
+.enlace:hover{
+    color: #f5f21b;
+    text-decoration: underline;
+}
+
+.subtitulo{
+    font-size: 20px;
+    color: #1b4ef5;
+}
+.boton_contacto{
+    background-color: #c53bef;
+    color: #ffffff;
+    width: 100px;
+    height: 60px;
+    border: none;
+}
+
+.boton_contacto:hover{
+    background-color: #eb104e;
+    color: #ffffff;
+}
+
+.boton_contacto:active{
+    background-color: #10e4eb;
+    color: #000000;
+}
+
+.contacto div{
+    text-align: center;
+}
+
+#titulo-principal{
+    text-decoration: underline;
+}
