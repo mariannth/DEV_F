@@ -1,0 +1,48 @@
+/*Reset básico*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dad4d4;
+    color: #272626;
+}
+
+header {
+    text-align: center;
+    background-color: #82b6ec;
+    color: #0c424c;
+    padding: 20px;
+}
+
+section {
+    /* Los valores para la propiedad border son tres separados cada unopor un espacio: 
+     el primero es el grosor del borde
+     el segundo es el tipo de borde
+     el tercero es el color */
+    border: 3px solid #b0b6b7;
+    background-color: #dff7fc;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+}
+
+h2 {
+    color: #7193e8;
+}
+
+.box {
+    background-color: #99c9d2;
+    border: 2px solid #7193e8;
+    border-radius: 10px;
+    margin: 10px auto;
+    /* El valor auto en a propiedad de margin hace que el navegador calcule automáticamente el espacio necesario para centrar un elemento dentro de se contenedor padre, siempre que el elemento tenga un ancho definido. Esta manera de centrar los elementos solo aplica de mandera horizontal*/
+    padding: 10px;
+    text-align: center;
+}
+
+.block {
+    display: block;
+    width: 150px;
+    height: 30px;
+
+}
