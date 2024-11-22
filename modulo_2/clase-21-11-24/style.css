@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #dad4d4;
     color: #272626;
+    line-height: 2.0;
 }
 
 header {
@@ -58,4 +59,10 @@ h2 {
     display: inline-block;
     width: 150px;
     height: 30px;
+}
+
+.model{
+    padding: 20px;
+    margin: 20px;
+    border: 10px solid #71e7bf;
 }
