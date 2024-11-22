@@ -1,16 +1,39 @@
+/* Vriables de CSS */
+/* Son valores reutilizables definidos mediante la sintaxis "--nombre-variable" 
+-Permiten centralizar la gestión de estilos, facilitando el mantenimiento y los cambios globales
+-Se pueden usar en cualquier parte del CSS mediante la función var(--nombre-variable).
+*/
+
+/* El selector global lo conocemos como el selector :root
+:root es una pseudo-clase que selecciona el elemnto raíz del documento (el elemento html)
+-Es útil para declarar variables globales que afecten a toda la página
+-También puedes declarar variables en otros selectores como clases, ID o elementos específicos para limitar el alcance*/
+
+:root{
+    --color-primario: #82b6ec;
+    --color-secundario: #7193e8;
+    --color-terciario: #0c424c;
+    --color-border: #b0b6b7;
+    --color-quinto: #dff7fc;
+    --color-background: #dad4d4;
+    --color-acentos: #99c9d2;
+    
+}
+
+
 /*Reset básico*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #dad4d4;
+    background-color: var(--color-background);
     color: #272626;
     line-height: 2.0;
 }
 
 header {
     text-align: center;
-    background-color: #82b6ec;
+    background-color: var(--color-primario);
     color: #0c424c;
     padding: 20px;
 }
@@ -20,7 +43,7 @@ section {
      el primero es el grosor del borde
      el segundo es el tipo de borde
      el tercero es el color */
-    border: 3px solid #b0b6b7;
+    border: 3px solid var(--color-border);
     background-color: #dff7fc;
     border-radius: 15px;
     padding: 15px;
@@ -32,8 +55,8 @@ h2 {
 }
 
 .box {
-    background-color: #99c9d2;
-    border: 2px solid #7193e8;
+    background-color: var(--color-acentos);
+    border: 2px solid var(--color-secundario);
     border-radius: 10px;
     margin: 10px auto;
     /* El valor auto en a propiedad de margin hace que el navegador calcule automáticamente el espacio necesario para centrar un elemento dentro de se contenedor padre, siempre que el elemento tenga un ancho definido. Esta manera de centrar los elementos solo aplica de mandera horizontal*/
