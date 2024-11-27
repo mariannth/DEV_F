@@ -1,0 +1,25 @@
+/* Reset básico */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Estilos generales aplicados que se heredan a los hijos */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #f4f4f4;
+}
+
+/* según la especifidad, se va a dar mayor prioridad al selector que proporcione mejor contexto del elemento que quiere modificar */
+
+header h1{
+    color: blue;
+}
+
+h1{
+    color: blueviolet;
+}
