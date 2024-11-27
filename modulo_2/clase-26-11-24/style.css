@@ -1,3 +1,13 @@
+/* VARIABLES */
+
+:root{
+    --color-primario: #2a9d8f;
+    --color-secundario: #264653;
+    --color-background: #f4f4f4;
+    --color-texto: #333333;
+    
+}
+
 /* Reset básico */
 
 * {
@@ -10,16 +20,55 @@ body {
     padding: 0;
     /* Estilos generales aplicados que se heredan a los hijos */
     font-family: Arial, Helvetica, sans-serif;
-    color: #333333;
-    background-color: #f4f4f4;
+    color: var(--color-texto);
+    background-color: var(--color-background);
 }
+
+header, main, footer {
+    margin: 0 auto;
+    padding: 20px;
+
+}
+footer{
+    text-align: center;
+}
+
 
 /* según la especifidad, se va a dar mayor prioridad al selector que proporcione mejor contexto del elemento que quiere modificar */
 
 header h1{
-    color: blue;
+    color: var(--color-primario);
 }
 
 h1{
     color: blueviolet;
+}
+.author{
+    font-weight: bold;
+    color: var(--color-primario);
+}
+.subtitle{
+    font-size: 18px;
+    color: var(--color-secundario);
+}
+.lista-tareas{
+    list-style-type: none;
+    margin-top: 25px;
+    padding: 0;
+}
+
+.lista-tareas li{
+    margin-bottom: 15px;
+}
+
+.tarea-checkbox{
+    margin-right: 10px;
+    accent-color: var(--color-primario);
+    cursor: pointer;
+}
+
+.tarea-checkbox:checked + .tarea-descripcion{
+    text-decoration: line-through;
+    font-style: italic;
+    color: var(--color-secundario);
 }
