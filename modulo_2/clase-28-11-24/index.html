@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Práctica de Flexbox</title>
 </head>
-<body>
+
+<body class="tema-claro">
     <header>
         <h1>Práctica de Flexbox</h1>
         <nav aria-label="Mapa de navegación de la página">
             <ul class="navbar">
-                <li><a class= "nav-link" href="#inicio">Inicio</a></li>
-                <li><a class= "nav-link"  href="#tarjeta">Tarjetas</a></li>
-                <li><a class= "nav-link"  href="#formulario">Formulario</a></li>
+                <li><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li><a class="nav-link" href="#tarjeta">Tarjetas</a></li>
+                <li><a class="nav-link" href="#formulario">Formulario</a></li>
                 <li>
-                    <button class="boton-tema" aria-label="Cambiar de tema">🌓</button>
-                </li>                
+                    <button class="boton-tema" aria-label="Cambiar de tema" id="boton-tema">🌓</button>
+                </li>
             </ul>
         </nav>
     </header>
@@ -24,7 +26,7 @@
         <section class="seccion-tarjetas">
             <h2 id="tarjeta">Ejemplo de tarjetas con flexbox</h2>
             <p> Interacción con Flexbox: observa cómo diferentes propiedades afectan el diseño de cada tarjeta.</p>
-            <div class = "contenedor-tarjetas">
+            <div class="contenedor-tarjetas">
                 <article class="card">
                     <h3>Tarjeta 1</h3>
                     <p>Esta tarjeta usa <code>align-self: flex-end</code> para moverse hacia abajo.</p>
@@ -45,6 +47,15 @@
         </section>
         <section>
             <h2 id="formulario">Ejemplo de formulario con Flexbox</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" >
+                <label for="email">Correo: </label>
+                <input type="email" >
+                <label for="mensaje">Mensaje:</label>
+                <textarea></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
 
     </main>
@@ -56,4 +67,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

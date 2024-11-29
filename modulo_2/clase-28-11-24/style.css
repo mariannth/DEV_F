@@ -1,14 +1,52 @@
+/* VARIABLES GLOBALES */
+
+:root{
+    /* Tema claro */
+    --claro-color-primario: #f0f4ef;
+    --claro-texto-primario: #2f4f4f;
+    --claro-color-secundario: #e2f0d9;
+    --claro-texto-secundario: #4c6e4c;
+    --claro-color-acento: #A7C957;
+    --claro-color-hover: #88b04b;
+
+    /* Tema oscuro */
+    --oscuro-color-primario: #2f4f4f;
+    --oscuro-texto-primario: #f0f4ef;
+    --oscuro-color-secundario: #e2f0d9;
+    --oscuro-texto-secundario: #4c6e4c;
+    --oscuro-color-acento: #A7C957;
+    --oscuro-color-hover: #88b04b;
+}
+
+/* USO DE VARIABLES SEGÚN LA CLASE */
+body.tema-claro {
+    --color-primario: var(--claro-color-primario);
+    --texto-primario: var(--claro-texto-primario);
+    --color-secundario: var(--claro-color-secundario);
+    --texto-secundario: var(--claro-texto-secundario);
+    --color-acento: var(--claro-color-acento);
+    --color-hover: var(--claro-color-hover);
+}
+body.tema-oscuro {
+    --color-primario: var(--oscuro-color-primario);
+    --texto-primario: var(--oscuro-texto-primario);
+    --color-secundario: var(--oscuro-color-secundario);
+    --texto-secundario: var(--oscuro-texto-secundario);
+    --color-acento: var(--oscuro-color-acento);
+    --color-hover: var(--oscuro-color-hover);
+}
+
 /* Reseteo general */
 * {
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f0f4ef;
-    color: #2f4f4f;
+    background-color: var(--color-primario);
+    color: var(--texto-primario);
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -97,4 +135,26 @@ footer {
 
 .card:nth-child(3) {
     order: -1;
+}
+
+/* FORMULARIO */
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+button{
+    background-color: #A7C957;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #88b04b;
 }
