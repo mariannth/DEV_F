@@ -61,6 +61,32 @@ header {
     border-radius: 5px;
 }
 
+.categorias{
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lista-categorias{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    gap: 20px;
+}
+.categoria-item{
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+}
+
+.categoria-item img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
 footer {
     text-align: center;
     padding: 10px;
