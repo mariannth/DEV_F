@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Tienda de ropa con Flexbox</title>
 </head>
+
 <body>
     <header>
-        <nav>
-            <div class="logo" aria-label = "Logotipo de la página">🎽</div>
-            <ul>
+        <nav class="navbar">
+            <div class="logo" aria-label="Logotipo de la página">👕</div>
+            <ul class="nav-links">
                 <li><a href="#hero">Inicio</a></li>
                 <li><a href="#categorias">Categorías</a></li>
                 <li><a href="#productos">Productos</a></li>
@@ -18,11 +20,19 @@
         </nav>
     </header>
     <main>
+        <section class="hero" id="hero">
+            <div class="hero-contenido">
+                <h1>Encuentra tu estilo</h1>
+                <p>Descubre lo último en calzado, ropa y accesorio</p>
+            </div>
+            <img class=hero-imagen src="https://picsum.photos/1100/450" alt="Imagen principal de promocion">
+        </section>
 
     </main>
     <footer>
         <p>&copy; 2024 Mariana Torres. Todos los derechos reservados. Tienda de ropa en línea.</p>
     </footer>
-    
+
 </body>
+
 </html>
